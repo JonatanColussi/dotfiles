@@ -110,6 +110,7 @@
   # "refuse to push if the upstream branch’s name is different from the local one"
   # https://git-scm.com/docs/git-config#git-config-pushdefault
   default = simple
+	followTags = true
 [rebase]
   autoStash = true
 #[rerere]
