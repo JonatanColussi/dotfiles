@@ -9,7 +9,7 @@ fi
 
 DOMAIN=$1
 COMMON_NAME=${2:-*.$1}
-SUBJECT="/C=BR/ST=SP/L=Sao Paulo/O=gilbarbara/CN=$DOMAIN/emailAddress=gilbarbara@gmail.com"
+SUBJECT="/C=BR/ST=SP/L=Sao Paulo/O=jonatancolussi/CN=$DOMAIN/emailAddress=jonatancolussi81@gmail.com"
 NUM_OF_DAYS=999
 EXT="authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
@@ -37,7 +37,7 @@ fi
 echo "$EXT" > /tmp/__v3.ext
 
 openssl req -new -newkey rsa:2048 -sha256 -nodes $KEY_OPT device.key -subj "$SUBJECT" -out device.csr
-openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days $NUM_OF_DAYS -sha256 -extfile /tmp/__v3.ext 
+openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days $NUM_OF_DAYS -sha256 -extfile /tmp/__v3.ext
 
 # move output files to final filenames
 mv device.key "$DOMAIN.key"
@@ -48,13 +48,13 @@ rm rootCA.key
 rm rootCA.pem
 rm rootCA.srl
 
-echo 
+echo
 echo "###########################################################################"
-echo Done! 
+echo Done!
 echo "###########################################################################"
 echo "To use these files on your server, simply copy both $DOMAIN.csr and"
 echo "$DOMAIN.key to your webserver, and use like so (if Apache, for example)"
-echo 
+echo
 echo "    SSLCertificateFile    /path_to_your_files/$DOMAIN.crt"
 echo "    SSLCertificateKeyFile /path_to_your_files/$DOMAIN.key"
 echo

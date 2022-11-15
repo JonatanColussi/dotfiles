@@ -42,7 +42,7 @@
   changed = green
   untracked = cyan
 [commit]
-  gpgSign = true
+	gpgsign = false
 [credential]
   helper = osxkeychain
 [delta "interactive"]
@@ -130,9 +130,8 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
-[url "git@github.com:gilbarbara/"]
-  insteadOf = "git://github.com/gilbarbara/"
+[url "git@github.com:JonatanColussi/"]
+  insteadOf = "git://github.com/JonatanColussi/"
 [user]
-  name = Gil Barbara
-  email = gilbarbara@gmail.com
-  signingkey = 9F0A7FD258FF96E5
+  name = Jonatan Colussi
+  email = jonatancolussi81@gmail.com

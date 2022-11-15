@@ -1,20 +1,20 @@
 {
-  "name": "@gilbarbara/dotfiles",
+  "name": "@JonatanColussi/dotfiles",
   "version": "0.1.0",
-  "description": "Gil Barbara's dotfiles",
+  "description": "Jonatan Colussi's dotfiles",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gilbarbara/dotfiles.git"
+    "url": "git+https://github.com/JonatanColussi/dotfiles.git"
   },
   "keywords": [
     "dotfiles"
   ],
-  "author": "Gil Barbara <gilbarbara@gmail.com>",
+  "author": "Jonatan Colussi <jonatancolussi81@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gilbarbara/dotfiles/issues"
+    "url": "https://github.com/JonatanColussi/dotfiles/issues"
   },
-  "homepage": "https://github.com/gilbarbara/dotfiles#readme",
+  "homepage": "https://github.com/JonatanColussi/dotfiles#readme",
   "scripts": {
     "dump": "brew bundle dump --force && npmdump"
   }

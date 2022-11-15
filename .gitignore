@@ -76,6 +76,7 @@ xcuserdata/
 .config/gatsby
 .config/firebase
 .config/thefuck
+.npmrc
 
 # OS generated files #
 ######################

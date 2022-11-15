@@ -22,7 +22,7 @@ export GEM_PATH="$GEM_HOME/bin"
 # export PHP_PATH="$(brew --prefix)/opt/php/bin"
 export PHP_PATH="$(brew --prefix)/opt/php@7.4/bin"
 
-export GOPATH="/Users/gilbarbara/Documents/Go"
+export GOPATH="/Users/jonatancolussi/Documents/Go"
 
 PATH="./node_modules/.bin:$PATH"
 PATH="$(brew --prefix)/sbin:$PATH"
@@ -36,6 +36,8 @@ PATH="/usr/local/bin:$PATH"
 # Volta paths
 # export VOLTA_HOME="$HOME/.volta"
 # PATH="$VOLTA_HOME/bin:$PATH"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.post.zsh"

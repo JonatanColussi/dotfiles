@@ -81,6 +81,12 @@ brew "yarn-completion"
 brew "zoxide"
 brew "mongodb/brew/mongodb-community"
 brew "planetscale/tap/pscale"
+brew "n"
+brew "redis"
+brew "fig"
+brew "rabbitmq"
+brew "zsh"
+brew "spaceship"
 cask "alfred"
 cask "arduino"
 cask "authy"
@@ -156,6 +162,11 @@ cask "visual-studio-code"
 cask "vlc"
 cask "whatsapp"
 cask "zoom"
+cask "microsoft-teams"
+cask "dbeaver-community"
+cask "microsoft-outlook"
+cask "telegram"
+cask "mockoon"
 mas "CalcService", id: 899970159
 mas "Color Picker", id: 1545870783
 mas "djay Pro AI", id: 450527929
@@ -172,3 +183,4 @@ mas "Power JSON Editor", id: 499768540
 mas "Shazam", id: 897118787
 mas "WordService", id: 899972312
 mas "Xcode", id: 497799835
+mas "trello", id: 1278508951
