@@ -184,3 +184,4 @@ mas "Shazam", id: 897118787
 mas "WordService", id: 899972312
 mas "Xcode", id: 497799835
 mas "trello", id: 1278508951
+mas "Lightshot Screenshot", id: 526298438
